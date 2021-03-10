@@ -1,0 +1,12 @@
+#instalar node
+npm install --global yarn
+yarn add typescript 
+yarn add @types/typescript
+yarn tsc --init
+yarn add ts-node-dev
+"start": "ts-node-dev src/main.ts --transpile-only --ignore-watch node_modules"
+
+yarn add jest
+yarn add @types/jest
+yarn add ts-jest
+yarn ts-jest config:init
