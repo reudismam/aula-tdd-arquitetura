@@ -1,14 +1,9 @@
 import Employee from "./Employee";
 
 class EmployeeFilter {
-
     employeesEarningMoreThan(employees: Employee[], threshold: number) {
-        if (threshold <= 1000) {
-            return employees;
-        }
-        if (threshold >= 2000) {
-            return [ employees[2] ];
-        }
+        let employessMoreThanThreshould = employees.filter(e => e.salary > threshold);        
+        return employessMoreThanThreshould;
     }
 }
 
